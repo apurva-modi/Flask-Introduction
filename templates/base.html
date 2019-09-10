@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--file linking is done in the following way If you you trying to link the JS file this is the way that one should follow -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+
+   <!--this is a Jinja2 syntax which is a template engine that flask uses
+        we are creating a block and a template  and in this block we are going to insert 
+        our code on all the other pages that inherit this template -->
+    {% block head %}{% endblock %}
+</head>
+<body>
+    {% block body %}{% endblock %}
+</body>
+</html>
+
+ 
